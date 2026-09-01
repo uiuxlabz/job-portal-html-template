@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobOrbit — Find Your Next Career Move</title>
+  <meta name="description" content="JobOrbit is a modern job portal connecting talented people with companies that need them — search jobs by category and location, or post a role in minutes.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23131b25'/%3E%3Ccircle cx='32' cy='32' r='14' fill='none' stroke='%23f25c38' stroke-width='5'/%3E%3Cellipse cx='44' cy='20' rx='6' ry='3.2' fill='none' stroke='%23f25c38' stroke-width='3.5' transform='rotate(-30 44 20)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p class="topbar-item"><span class="topbar-icon">✈</span> 24,000+ jobs posted this month</p>
+      <p class="topbar-item topbar-mid">Companies hiring now · Verified listings only</p>
+      <p class="topbar-item topbar-end">
+        <a href="tel:+12125550197">+1 (212) 555-0197</a>
+        <a href="mailto:hello@joborbit.example">hello@joborbit.example</a>
+      </p>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Job<span>Orbit</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav-links" id="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="job-list.html" class="nav-link">Job List</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="job-list.html" class="nav-cta">Post a Job</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/img/img-hero-1.jpg" alt="" class="active">
+        <img src="assets/img/img-hero-2.jpg" alt="">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">★ Trusted by 4,200 companies</p>
+          <h1>Find the job that <em>fits your orbit.</em></h1>
+          <p class="hero-sub">From first interview to dream role — JobOrbit matches talented people with companies that actually need them. No noise, no spam, just real openings.</p>
+        </div>
+        <div class="search-card">
+          <div class="search-tabs" role="tablist">
+            <button class="tab-btn active" data-tab="job" role="tab" aria-selected="true">Find a Job</button>
+            <button class="tab-btn" data-tab="talent" role="tab" aria-selected="false">Find a Talent</button>
+          </div>
+          <form class="search-form" data-form novalidate>
+            <div class="search-field">
+              <label for="s-keyword" class="sr-only">Job title or keyword</label>
+              <input id="s-keyword" type="text" name="keyword" placeholder="Job title, keyword or company" required>
+            </div>
+            <div class="search-field">
+              <label for="s-cat" class="sr-only">Category</label>
+              <select id="s-cat" name="category">
+                <option value="">All categories</option>
+                <option>Marketing</option>
+                <option>Engineering</option>
+                <option>Design</option>
+                <option>Finance</option>
+                <option>Sales</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="s-loc" class="sr-only">Location</label>
+              <select id="s-loc" name="location">
+                <option value="">Any location</option>
+                <option>New York</option>
+                <option>San Francisco</option>
+                <option>London</option>
+                <option>Remote</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary search-btn">Search</button>
+            <p class="form-msg form-ok">Searching — we will match you shortly.</p>
+            <p class="form-msg form-err">Please enter a keyword to search.</p>
+          </form>
+          <p class="search-note">Popular: <a href="job-list.html">Product Designer</a> · <a href="job-list.html">Data Analyst</a> · <a href="job-list.html">Remote</a></p>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">24K</span>
+            <span class="hero-stat-label">Live jobs</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">4.2K</span>
+            <span class="hero-stat-label">Hiring companies</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">180K</span>
+            <span class="hero-stat-label">Monthly candidates</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Explore by category</p>
+          <h2 class="section-title">Browse the fields <em>worth your time.</em></h2>
+        </div>
+        <div class="cat-ribbon reveal" role="list">
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">📣</span>Marketing<small>2,340</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">💻</span>Engineering<small>4,105</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">🎨</span>Design &amp; Creative<small>1,876</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">📊</span>Finance<small>1,254</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">🤝</span>Human Resources<small>892</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">🚀</span>Business Development<small>1,433</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">🧑‍🏫</span>Education<small>764</small></a>
+          <a href="job-list.html" class="cat-chip"><span class="cat-ico">⚙️</span>Operations<small>987</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 class="section-title">From search to offer <em>in three moves.</em></h2>
+        </div>
+        <div class="step-grid">
+          <div class="step-card reveal">
+            <span class="step-num">01</span>
+            <span class="step-ico" aria-hidden="true">🔎</span>
+            <h3>Search smart</h3>
+            <p>Filter by role, category and location. Your results are ranked by relevance, not by who paid the most.</p>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-num">02</span>
+            <span class="step-ico" aria-hidden="true">⚡</span>
+            <h3>Apply in minutes</h3>
+            <p>One profile, one click. Send your application with your stored resume — no re-typing for every role.</p>
+          </div>
+          <div class="step-card reveal">
+            <span class="step-num">03</span>
+            <span class="step-ico" aria-hidden="true">🚀</span>
+            <h3>Launch your career</h3>
+            <p>Track applications, compare offers and negotiate with confidence. Your next chapter starts here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Featured jobs</p>
+          <h2 class="section-title">Hand-picked roles, <em>right now.</em></h2>
+        </div>
+        <div class="job-grid">
+          <article class="job-card reveal">
+            <img src="assets/img/img-logo-1.jpg" alt="Northline logo" class="job-logo">
+            <div class="job-body">
+              <p class="job-meta">Northline · New York, NY</p>
+              <h3 class="job-title">Senior Software Engineer</h3>
+              <div class="job-tags">
+                <span class="job-tag tag-full">Full Time</span>
+                <span class="job-tag tag-remote">Hybrid</span>
+              </div>
+            </div>
+            <div class="job-side">
+              <span class="job-salary">$140K – $180K</span>
+              <a href="job-list.html" class="btn btn-primary btn-sm">Apply now</a>
+            </div>
+          </article>
+          <article class="job-card reveal">
+            <img src="assets/img/img-logo-2.jpg" alt="Falcon Goods logo" class="job-logo">
+            <div class="job-body">
+              <p class="job-meta">Falcon Goods · Remote</p>
+              <h3 class="job-title">Product Designer</h3>
+              <div class="job-tags">
+                <span class="job-tag tag-full">Full Time</span>
+                <span class="job-tag tag-remote">Remote</span>
+              </div>
+            </div>
+            <div class="job-side">
+              <span class="job-salary">$110K – $145K</span>
+              <a href="job-list.html" class="btn btn-primary btn-sm">Apply now</a>
+            </div>
+          </article>
+          <article class="job-card reveal">
+            <img src="assets/img/img-logo-3.jpg" alt="Brightpath logo" class="job-logo">
+            <div class="job-body">
+              <p class="job-meta">Brightpath · San Francisco, CA</p>
+              <h3 class="job-title">Data Analyst</h3>
+              <div class="job-tags">
+                <span class="job-tag tag-part">Part Time</span>
+                <span class="job-tag tag-on">On-site</span>
+              </div>
+            </div>
+            <div class="job-side">
+              <span class="job-salary">$85K – $105K</span>
+              <a href="job-list.html" class="btn btn-primary btn-sm">Apply now</a>
+            </div>
+          </article>
+          <article class="job-card reveal">
+            <img src="assets/img/img-logo-4.jpg" alt="Meridian Health logo" class="job-logo">
+            <div class="job-body">
+              <p class="job-meta">Meridian Health · Boston, MA</p>
+              <h3 class="job-title">Marketing Manager</h3>
+              <div class="job-tags">
+                <span class="job-tag tag-full">Full Time</span>
+                <span class="job-tag tag-on">On-site</span>
+              </div>
+            </div>
+            <div class="job-side">
+              <span class="job-salary">$95K – $120K</span>
+              <a href="job-list.html" class="btn btn-primary btn-sm">Apply now</a>
+            </div>
+          </article>
+          <article class="job-card reveal">
+            <img src="assets/img/img-logo-5.jpg" alt="Summit Labs logo" class="job-logo">
+            <div class="job-body">
+              <p class="job-meta">Summit Labs · Austin, TX</p>
+              <h3 class="job-title">DevOps Engineer</h3>
+              <div class="job-tags">
+                <span class="job-tag tag-full">Full Time</span>
+                <span class="job-tag tag-remote">Remote</span>
+              </div>
+            </div>
+            <div class="job-side">
+              <span class="job-salary">$130K – $165K</span>
+              <a href="job-list.html" class="btn btn-primary btn-sm">Apply now</a>
+            </div>
+          </article>
+          <article class="job-card reveal">
+            <img src="assets/img/img-logo-2.jpg" alt="Falcon Goods logo" class="job-logo">
+            <div class="job-body">
+              <p class="job-meta">Falcon Goods · Remote</p>
+              <h3 class="job-title">Growth Marketing Lead</h3>
+              <div class="job-tags">
+                <span class="job-tag tag-part">Contract</span>
+                <span class="job-tag tag-remote">Remote</span>
+              </div>
+            </div>
+            <div class="job-side">
+              <span class="job-salary">$90K – $115K</span>
+              <a href="job-list.html" class="btn btn-primary btn-sm">Apply now</a>
+            </div>
+          </article>
+        </div>
+        <p class="section-cta reveal"><a href="job-list.html" class="btn btn-ghost-ink">Browse all 24,000+ jobs</a></p>
+      </div>
+    </section>
+
+    <section class="section section-ink">
+      <div class="container">
+        <div class="split">
+          <div class="split-copy reveal">
+            <p class="eyebrow eyebrow-light">For companies</p>
+            <h2 class="section-title title-light">Hire the person, <em>not the profile.</em></h2>
+            <p class="split-lead">Post a role in under five minutes and reach 180,000 qualified candidates a month. Our matching engine surfaces the people most likely to thrive in your team — no agencies, no recruiters in the middle.</p>
+            <ul class="check-list">
+              <li class="check-item">Free job posts for your first three roles</li>
+              <li class="check-item">Applicant tracking built in</li>
+              <li class="check-item">Verified-company badges on every listing</li>
+            </ul>
+            <a href="job-list.html" class="btn btn-primary">Post a Job</a>
+          </div>
+          <div class="split-media reveal">
+            <img src="assets/img/img-about-1.jpg" alt="Team working together in a bright office" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Success stories</p>
+          <h2 class="section-title">People who found <em>their orbit.</em></h2>
+        </div>
+        <div class="tst-grid">
+          <article class="tst-card reveal">
+            <div class="tst-head">
+              <img src="assets/img/img-avatar-1.jpg" alt="Portrait of Maya Rodriguez" class="tst-avatar">
+              <div>
+                <h3>Maya Rodriguez</h3>
+                <p class="tst-role">Frontend Engineer · Brightpath</p>
+              </div>
+            </div>
+            <p>“I applied to eleven roles on a Sunday and had three interviews by Thursday. JobOrbit’s matching was eerily good — every role genuinely fit what I wanted.”</p>
+          </article>
+          <article class="tst-card reveal">
+            <div class="tst-head">
+              <img src="assets/img/img-avatar-2.jpg" alt="Portrait of Daniel Osei" class="tst-avatar">
+              <div>
+                <h3>Daniel Osei</h3>
+                <p class="tst-role">Data Analyst · Meridian Health</p>
+              </div>
+            </div>
+            <p>“After six months of recruiter dead-ends, I found my current role here in a week. The salary transparency meant no awkward negotiations.”</p>
+          </article>
+          <article class="tst-card reveal">
+            <div class="tst-head">
+              <img src="assets/img/img-avatar-3.jpg" alt="Portrait of Sofia Lindqvist" class="tst-avatar">
+              <div>
+                <h3>Sofia Lindqvist</h3>
+                <p class="tst-role">Product Designer · Falcon Goods</p>
+              </div>
+            </div>
+            <p>“As a hiring manager I’ve posted five roles on JobOrbit. The quality of applicants is consistently higher than any other board we use.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner reveal">
+        <p class="eyebrow eyebrow-light">Get started today</p>
+        <h2 class="cta-title">Your next role is <em>one search away.</em></h2>
+        <p class="cta-sub">Create a free profile, upload your resume and start applying in minutes. Companies are hiring right now.</p>
+        <div class="cta-actions">
+          <a href="job-list.html" class="btn btn-primary">Search jobs</a>
+          <a href="contact.html" class="btn btn-ghost-light">Talk to us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Job<span>Orbit</span></span>
+        </a>
+        <p>The modern job portal connecting talented people with companies that need them. Verified listings, transparent salaries, zero spam.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>For candidates</h3>
+        <ul class="footer-links">
+          <li><a href="job-list.html">Browse jobs</a></li>
+          <li><a href="category.html">Browse by category</a></li>
+          <li><a href="job-list.html">Remote jobs</a></li>
+          <li><a href="about.html">Career tips</a></li>
+          <li><a href="contact.html">Profile help</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>For employers</h3>
+        <ul class="footer-links">
+          <li><a href="job-list.html">Post a job</a></li>
+          <li><a href="job-list.html">Search candidates</a></li>
+          <li><a href="about.html">Pricing</a></li>
+          <li><a href="about.html">Success stories</a></li>
+          <li><a href="contact.html">Advertise with us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Find us</h3>
+        <ul class="footer-links footer-contact">
+          <li>248 Hudson Street, 8th Floor<br>New York, NY 10013</li>
+          <li><a href="tel:+12125550197">+1 (212) 555-0197</a></li>
+          <li><a href="mailto:hello@joborbit.example">hello@joborbit.example</a></li>
+        </ul>
+        <form class="newsletter" data-form novalidate>
+          <label for="nl-email" class="sr-only">Email for job alerts</label>
+          <input id="nl-email" type="email" name="email" placeholder="Get weekly job alerts" required>
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          <p class="form-msg form-ok">You are subscribed — first digest this Friday.</p>
+          <p class="form-msg form-err">Please enter a valid email address.</p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span data-year>2026</span> JobOrbit Careers Inc. All rights reserved.</p>
+        <p>Listings are provided by employers and are verified before publication.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
